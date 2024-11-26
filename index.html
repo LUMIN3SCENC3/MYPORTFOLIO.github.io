@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+                color: #000000;
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+                color: #000000;
+            }
+            h3 {text-align: center;}
+            h4 {text-align: center;}
+            body {
+                background-image: url('bg.jpg');
+                border: 20px solid rgb(255, 255, 255); 
+                margin: 20px; 
+                padding: 10px;
+
+            }
+            h5 {
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+                color: #ffffff;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .about, .projects {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .projects {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .project-card {
+                background: linear-gradient(to right, #333333, #444444);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                color: #e0e0e0;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease-in-out;
+            }
+
+            .project-card:hover {
+                border: 1px solid #d4af37;
+                transform: translateY(-5px);
+            }
+
+            .center-image {
+                display: block;
+                margin: 0 auto;
+            }
+
+            hr {
+                border: none;
+                height: 2px;
+                background-color: #d4af37;
+                margin: 30px auto;
+                max-width: 80%;
+            }
+
+            .center-image {
+                display: block;
+                margin: 20px auto;
+                border-radius: 50%;
+                border: 5px solid #d4af37;
+            }
+
+            .gallery {
+                max-width: 1000px;
+                margin: 30px auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+                padding: 10px;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                transition: transform 0.3s;
+            }
+
+            .gallery img:hover {
+                transform: scale(1.05);
+            }
+
+            .gallery-title {
+                text-align: center;
+                font-size: 2em;
+                color: #d4af37;
+                margin-bottom: 20px;
+            }
+
+            .contacts {
+                text-align: center;
+                background: linear-gradient(to right, #333333, #444444);
+                padding: 20px;
+                border-top: 2px solid #d4af37;
+                color: #e0e0e0;
+            }
+
+            .contacts h2 {
+                color: #d4af37;
+                margin-bottom: 10px;
+            }
+
+            .contacts a {
+                text-decoration: none;
+                color: #d4af37;
+                margin: 0 15px;
+                font-size: 1.2em;
+                transition: color 0.3s;
+            }
+
+            .contacts a:hover {
+                color: #ffffff;
+            }
+
+            .contacts-icons img {
+                width: 40px;
+                height: 40px;
+                margin: 10px;
+                transition: transform 0.3s;
+            }
+
+            .contacts-icons img:hover {
+                transform: scale(1.2);
+            }
+
+            .project-image {
+                width: 120px;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+
+            .project-image:hover {
+                transform: scale(1.1);
+            }
+        </style>
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <h1 style="background-color: white;">My Portfolio!</h1>
+        <h2 style="background-color: white;">About Me</h2>
+        <h3 style="color: white; font-size: larger;">What's up! My name is Denrich Clarence S. Yanga and I'm an Information Technology Student at University Of The East Caloocan</h3>
+        <h4 style="color: white; font-size: 20px;">I'm 18 years old and I was born in Manila on September 06,2006</h4>
+        <img src="ME.jpg" alt="Profile Image" width="200" height="200" class="center-image">
+        <hr>
+        <section id="projects" class="projects">
+            <h5>More About Me</h5>
+            <div class="project-card">
+              <h3>Achievements</h3>
+              <p>My biggest achievement was graduating at my old Senior High School with High Honors</p>
+              <p>I'm always so determined to become an achiever to make my family proud so I'm so thankful and happy of this achievement.</p>
+              <a>
+                <img src="achieve1.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="achieve2.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="achieve3.jpg" alt="Project 1" class="project-image">
+              </a>
+            </div>
+            <div class="project-card">
+              <h3>Skills</h3>
+              <p>I can cook carbonara, and I also can do digital art and play the piano.</p>
+              <a>
+                <img src="skills.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="skills2.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="skills3.jpg" alt="Project 1" class="project-image">
+              </a>
+            </div>
+            <div class="project-card">
+              <h3>Hobbies and Interests</h3>
+              <p>My personal hobbies are watching anime and listening to music. I really love Detective Conan ever since I was a child and my favorite artist is Taylor Swift. I also really love animals especially cats.</p>
+              <a>
+                <img src="hobby1.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="hobby2.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="hobby3.jpg" alt="Project 1" class="project-image">
+              </a>
+            </div>
+            <div class="project-card">
+              <h3>Projects</h3>
+              <p>THESE ARE MY COLLECTION OF PROJECTS</p>
+              <p> The first one is my research about UV, LED and Sunlight's effect on plants. The second is me making buko pandan cupcakes for my LE Subject. The third is my friendship bracelet creations for my friends.</p>
+              <a>
+                <img src="project.jpg" alt="Project 1" class="project-image">
+              </a>
+              <a>
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+              </a>
+              <a>
+                <img src="project3.jpg" alt="Project 3" class="project-image">
+              </a>
+            </div>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2 class="gallery-title">Denrich's Gallery</h2>
+            <img src="gal1.jpg" alt="Image 1">
+            <img src="gal2.jpg" alt="Image 2">
+            <img src="gal3.jpg" alt="Image 3">
+            <img src="gal4.jpg" alt="Image 4">
+            <img src="gal5.jpg" alt="Image 5">
+            <img src="gal6.jpg" alt="Image 6">
+            <img src="gal7.jpg" alt="Image 7">
+            <img src="gal8.jpg" alt="Image 8">
+            <img src="gal9.jpg" alt="Image 9">
+            <img src="gal10.jpg" alt="Image 10">
+            <img src="gal11.jpg" alt="Image 11">
+        </section>
+        <section id="contacts" class="contacts">
+            <h2>Contacts</h2>
+            <div class="contacts-icons">
+                <a href="https://www.facebook.com/denden.yanga" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/_dnrch.lumi" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="mailto:denrichclarence@gmail.com" target="_blank"><img src="gmail.png" alt="Gmail"></a>
+                <a href="https://open.spotify.com/user/31doedyi6mel3j7dzenmu4tv7wb4" target="_blank"><img src="spotify.png" alt="Spotify"></a>
+            </div>
+        </section>
+    </body>
+</html>
